@@ -2,5 +2,30 @@
   "extends": [
     "@rocketseat/eslint-config/react",
     "next/core-web-vitals"
-  ]
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true,
+        "trailingComma": "none",
+        "arrowParens": "avoid",
+        "semi": false
+      },
+      {
+        "usePrettierrc": false
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never",
+        "imports": "never",
+        "objects": "never"
+      }
+    ]
+  }
 }
