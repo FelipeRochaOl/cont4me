@@ -15,7 +15,7 @@ export const {
       background:
         'linear-gradient(95deg, #FFF 80%, rgba(8, 245, 163, .8) 100%)',
       backgroundHeader:
-        'linear-gradient(1deg, #FFF 30%, rgba(8, 245, 163, .3) 100%)',
+        'linear-gradient(2deg, #FFF 88%, rgba(8, 245, 163, .4) 100%)',
       font: '#2F2E41',
       white: '#FFF',
 
@@ -33,6 +33,7 @@ export const {
     },
 
     fontSizes: {
+      '3sm': '0.75rem',
       '2sm': '0.875rem',
       sm: '1rem',
       md: '1.125rem',
