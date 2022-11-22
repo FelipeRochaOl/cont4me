@@ -20,7 +20,7 @@
     "comma-dangle": [
       "error",
       {
-        "arrays": "always-multiline",
+        "arrays": "never",
         "exports": "always-multiline",
         "functions": "never",
         "imports": "never",
