@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi'
+import { SelectItem } from '../Form/SelectItem'
+import { SelectRadix } from '../Form/SelectRadix'
 import {
   CalendarBillContainer,
   CalendarBillContent,
@@ -20,7 +22,12 @@ export const CalendarBill = () => {
         <CalendarBillTable>
           <thead>
             <tr className="topTableBill">
-              <th colSpan={2}>Ano: 2022</th>
+              <th colSpan={2}>
+                <SelectRadix id="year" label="Ano" defaultValue="2022">
+                  <SelectItem value="2022">2022</SelectItem>
+                  <SelectItem value="2021">2021</SelectItem>
+                </SelectRadix>
+              </th>
               <th colSpan={2}>
                 Saldo Anterior (R$): <span>20.000,00</span>
               </th>

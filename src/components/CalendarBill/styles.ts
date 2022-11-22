@@ -53,21 +53,44 @@ export const CalendarBillTable = styled('table', {
       borderTop: '0.2px solid $green200'
     },
 
-    '.topTableBill th': {
-      color: '$green200',
-      fontSize: '$sm',
+    '.topTableBill': {
+      th: {
+        color: '$green200',
+        fontSize: '$sm',
 
-      span: {
-        fontWeight: 500,
-        fontSize: '$lg'
+        span: {
+          fontWeight: 500,
+          fontSize: '$lg'
+        },
+
+        '&:first-child': {
+          textAlign: 'left'
+        },
+
+        '&:last-child': {
+          textAlign: 'right'
+        }
       },
 
-      '&:first-child': {
-        textAlign: 'left'
-      },
+      '.selectContainer': {
+        gap: '0.313rem',
 
-      '&:last-child': {
-        textAlign: 'right'
+        label: {
+          color: '$green200',
+          fontSize: '$sm',
+          fontWeight: 300
+        },
+
+        '.selectTrigger': {
+          outline: '0.3px solid $green200',
+          color: '$green100',
+          minWidth: '83px'
+        },
+
+        '.selectTrigger:hover': {
+          outline: '0.3px solid $green200',
+          color: 'white'
+        }
       }
     },
 
