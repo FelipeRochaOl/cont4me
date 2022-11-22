@@ -10,76 +10,14 @@ export const BalanceContainer = styled('section', {
 })
 
 export const BalanceCoin = styled('div', {
-  display: 'flex',
-  alignItems: 'baseline',
-  gap: '1.063rem',
+  '.selectContainer': {
+    gap: '1.063rem'
+  },
 
   '.selectTrigger': {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
     minWidth: '124px',
     outline: '0.3px solid $gray400',
     padding: '0 10px'
-  },
-
-  '.selectTrigger:hover': {
-    color: 'white',
-    backgroundColor: '$green100',
-
-    '.selectIcon': {
-      color: 'white'
-    }
-  },
-
-  '.selectIcon': {
-    color: '$gray100'
-  },
-
-  '.selectContent': {
-    color: '$gray400',
-    backgroundColor: 'white',
-    borderRadius: '6px',
-    border: '1px solid $gray400'
-  },
-
-  '.selectItemIndicator': {
-    color: '$green100'
-  },
-
-  '.selectItem': {
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '5px'
-  },
-
-  '.selectItem[data-disabled]': {
-    color: '$gray100',
-    pointerEvents: 'none'
-  },
-
-  '.selectItem[data-highlighted]': {
-    outline: 'none',
-    backgroundColor: '$green100',
-    color: 'white'
-  },
-
-  '.selectItem:hover': {
-    color: 'white',
-    backgroundColor: '$green100',
-
-    '.selectItemIndicator': {
-      color: 'white'
-    }
-  },
-
-  '.selectScrollButton': {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    color: '$green200',
-    cursor: 'default'
   }
 })
 
