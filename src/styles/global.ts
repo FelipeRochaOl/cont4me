@@ -35,5 +35,9 @@ export const globalStyles = globalCss({
   h1: {
     fontSize: '$3xl',
     letterSpacing: '-0.063rem'
+  },
+
+  a: {
+    cursor: 'pointer'
   }
 })
