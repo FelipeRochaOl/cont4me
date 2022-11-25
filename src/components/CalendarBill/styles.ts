@@ -177,7 +177,3 @@ export const CalendarBillTable = styled('table', {
     }
   }
 })
-
-export const CalendarBillFooter = styled('footer', {
-  margin: '20px auto'
-})

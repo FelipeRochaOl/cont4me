@@ -1,11 +1,9 @@
-import Image from 'next/image'
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi'
 import { SelectItem } from '../Form/SelectItem'
 import { SelectRadix } from '../Form/SelectRadix'
 import {
   CalendarBillContainer,
   CalendarBillContent,
-  CalendarBillFooter,
   CalendarBillHeader,
   CalendarBillTable
 } from './styles'
@@ -395,14 +393,6 @@ export const CalendarBill = () => {
           </tfoot>
         </CalendarBillTable>
       </CalendarBillContent>
-      <CalendarBillFooter>
-        <Image
-          src="/assets/footer-image-pig.svg"
-          alt="Homem colocando uma moeda dentro do porquinho"
-          width={268.93}
-          height={216.83}
-        />
-      </CalendarBillFooter>
     </CalendarBillContainer>
   )
 }
