@@ -7,6 +7,7 @@ import {
   CalendarBillHeader,
   CalendarBillTable
 } from './styles'
+import { SummaryCell } from './SummaryCell'
 
 export const CalendarBill = () => {
   return (
@@ -55,20 +56,18 @@ export const CalendarBill = () => {
             <tr>
               <td>Janeiro</td>
               <td>
-                <summary>
-                  <span>
-                    3.000,<sub>00</sub>
-                  </span>
-                  <small>/de 3.000,00</small>
-                </summary>
+                <SummaryCell
+                  balance={{ integer: '3.000' }}
+                  provision="3000,00"
+                  type="income"
+                />
               </td>
               <td>
-                <summary>
-                  <span>
-                    3.757,<sub>65</sub>
-                  </span>
-                  <small>/de 3.757,65</small>
-                </summary>
+                <SummaryCell
+                  balance={{ integer: '3.757', cents: '65' }}
+                  provision="3.757,65"
+                  type="paid"
+                />
               </td>
               <td>
                 <summary>

@@ -29,7 +29,10 @@ export const {
       green200: '#07AF75',
 
       red050: '#FC0505',
-      red100: '#D60C0C'
+      red100: '#D60C0C',
+
+      blue100: '#08C7F5',
+      blue200: '#0795AF'
     },
 
     fontSizes: {
