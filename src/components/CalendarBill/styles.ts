@@ -82,9 +82,24 @@ export const CalendarBillTable = styled('table', {
         },
 
         '.selectTrigger': {
+          padding: '0 5px',
           outline: '0.3px solid $green200',
           color: '$green100',
-          minWidth: '83px'
+
+          span: {
+            fontSize: '$2sm',
+
+            '& + &': {
+              marginLeft: '5px'
+            }
+          }
+        },
+
+        '.selectItem': {
+          span: {
+            fontSize: '$2sm',
+            marginRight: '5px'
+          }
         },
 
         '.selectTrigger:hover': {

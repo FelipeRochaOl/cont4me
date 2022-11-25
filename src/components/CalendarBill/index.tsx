@@ -23,9 +23,18 @@ export const CalendarBill = () => {
           <thead>
             <tr className="topTableBill">
               <th colSpan={2}>
-                <SelectRadix id="year" label="Ano" defaultValue="2022">
-                  <SelectItem value="2022">2022</SelectItem>
-                  <SelectItem value="2021">2021</SelectItem>
+                <SelectRadix
+                  id="year"
+                  label="Ano"
+                  defaultValue="2022"
+                  iconSize={10}
+                >
+                  <SelectItem value="2022" iconSize={10}>
+                    2022
+                  </SelectItem>
+                  <SelectItem value="2021" iconSize={10}>
+                    2021
+                  </SelectItem>
                 </SelectRadix>
               </th>
               <th colSpan={2}>

@@ -37,10 +37,10 @@ const SelectComponent = (
 
   if (selectData) {
     return (
-      <SelectContainer ref={ref} className="selectContainer">
+      <SelectContainer ref={ref} className="selectContainer" id={id}>
         <label htmlFor={id}>{label}:</label>
         <Select.Root value={selectData} onValueChange={handleSelectValue}>
-          <Select.Trigger className="selectTrigger" id={id} aria-label={label}>
+          <Select.Trigger className="selectTrigger" aria-label={label}>
             <Select.Value aria-label={selectData} className="selectValue">
               {selectData}
             </Select.Value>
