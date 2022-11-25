@@ -115,7 +115,7 @@ export const CalendarBillTable = styled('table', {
       padding: '0.313rem',
 
       span: {
-        lineHeight: '0.875rem',
+        lineHeight: '1rem',
         display: 'flex',
         flexDirection: 'column'
       },
