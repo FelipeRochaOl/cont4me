@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi'
 import { SelectItem } from '../Form/SelectItem'
 import { SelectRadix } from '../Form/SelectRadix'
@@ -13,9 +14,13 @@ export const CalendarBill = () => {
   return (
     <CalendarBillContainer>
       <CalendarBillHeader>
-        <HiOutlineChevronLeft size={26} />
+        <Link href="">
+          <HiOutlineChevronLeft size={26} />
+        </Link>
         <h1>Carteira</h1>
-        <HiOutlineChevronRight size={26} />
+        <Link href="">
+          <HiOutlineChevronRight size={26} />
+        </Link>
       </CalendarBillHeader>
       <CalendarBillContent>
         <CalendarBillTable>
@@ -48,7 +53,12 @@ export const CalendarBill = () => {
                   <small>/provisão a receber</small>
                 </span>
               </th>
-              <th>Pago</th>
+              <th>
+                <span>
+                  Pago
+                  <small>/provisão a pagar</small>
+                </span>
+              </th>
               <th>Saldo</th>
             </tr>
           </thead>
