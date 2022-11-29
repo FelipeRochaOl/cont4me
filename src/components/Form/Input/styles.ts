@@ -66,6 +66,7 @@ export const InputContent = styled('div', {
 
 export const InputField = styled('input', {
   all: 'unset',
+  width: '100%',
   padding: '0.5rem 0',
 
   '&::placeholder': {

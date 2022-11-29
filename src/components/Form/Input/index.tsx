@@ -20,7 +20,7 @@ const InputComponent = (
   ref?: any
 ) => {
   return (
-    <InputContainer ref={ref}>
+    <InputContainer ref={ref} className="input">
       {
         <InputLabel focused={focused ? 'focus' : undefined}>
           {props.placeholder}
