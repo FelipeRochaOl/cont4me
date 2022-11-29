@@ -1,4 +1,5 @@
 import * as Avatar from '@radix-ui/react-avatar'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
@@ -151,6 +152,14 @@ const Profile = () => {
             Salvar
           </ButtonSubmit>
         </form>
+        <footer>
+          <Image
+            src={'/assets/logo-mini-green-footer.svg'}
+            alt="Mini logomarca cont4me verde"
+            width={215.98}
+            height={53.12}
+          />
+        </footer>
       </ProfileContainer>
     </Container>
   )

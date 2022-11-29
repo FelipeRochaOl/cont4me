@@ -35,6 +35,10 @@ export const ProfileContainer = styled('section', {
       width: '100%',
       margin: '2.188rem 0'
     }
+  },
+
+  footer: {
+    paddingBottom: '1.25rem'
   }
 })
 
