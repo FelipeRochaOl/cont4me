@@ -3,11 +3,11 @@ import { useState } from 'react'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
 import { FaEnvelope } from 'react-icons/fa'
 import { ImKey } from 'react-icons/im'
+import { ButtonSubmit } from '../components/Form/ButtonSubmit'
 
 import { Input } from '../components/Form/Input'
 import { useTheme } from '../hooks/useTheme'
 import {
-  Button,
   Container,
   Fieldset,
   FormContainer,
@@ -78,7 +78,9 @@ export default function Home() {
               }}
             />
 
-            <Button type="submit">Entrar</Button>
+            <ButtonSubmit type="submit" isBig>
+              Entrar
+            </ButtonSubmit>
           </Fieldset>
         </FormContainer>
         <Image

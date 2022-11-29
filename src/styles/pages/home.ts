@@ -90,21 +90,3 @@ export const ErrorField = styled('span', {
   lineHeight: '1.2rem',
   marginLeft: '5px'
 })
-
-export const Button = styled('button', {
-  fontSize: '1.875rem',
-  color: '$white',
-  backgroundColor: '$green100',
-  borderRadius: '10px',
-  outline: '0.3px solid #07AF75',
-  padding: '0.6rem',
-
-  '&:disabled': {
-    opacity: 0.6,
-    cursor: 'not-allowed'
-  },
-
-  '&:not(:disabled):hover': {
-    filter: 'brightness(1.1)'
-  }
-})
