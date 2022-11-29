@@ -1,7 +1,13 @@
 import { forwardRef, InputHTMLAttributes, ReactNode } from 'react'
 import { FieldError } from 'react-hook-form'
 
-import { ErrorField, InputContainer, InputContent, InputField } from './styles'
+import {
+  ErrorField,
+  InputContainer,
+  InputContent,
+  InputField,
+  InputLabel
+} from './styles'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   icon: ReactNode
@@ -15,6 +21,11 @@ const InputComponent = (
 ) => {
   return (
     <InputContainer ref={ref}>
+      {
+        <InputLabel focused={focused ? 'focus' : undefined}>
+          {props.placeholder}
+        </InputLabel>
+      }
       <InputContent focused={focused ? 'focus' : 'unfocus'}>
         {icon}
         <InputField {...props} />

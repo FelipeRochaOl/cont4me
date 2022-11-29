@@ -2,18 +2,44 @@ import { styled } from '@stitches/react'
 
 export const InputContainer = styled('div', {
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  position: 'relative'
+})
+
+export const InputLabel = styled('label', {
+  color: 'white',
+  fontSize: '$2sm',
+  marginLeft: '5px',
+  position: 'absolute',
+  top: '15px',
+  left: '33px',
+  transition: 'top 0.5s, left 0.5s, color 1s',
+
+  variants: {
+    focused: {
+      focus: {
+        top: '-20px',
+        left: '0px',
+        color: '$green100'
+      }
+    }
+  }
 })
 
 export const InputContent = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '0.3rem',
+  position: 'relative',
   border: '1px solid $green200',
   borderRadius: '8px',
   padding: '0 0.5rem',
   boxShadow: '0 0 0.13rem #07AF75',
-  transition: 'border boxShadow color 0.5s',
+  transition: 'border 0.5s, boxShadow 0.5s, color 0.5s',
+
+  '& > input::placeholder': {
+    transition: 'color 0.8s'
+  },
 
   variants: {
     focused: {
@@ -26,7 +52,7 @@ export const InputContent = styled('div', {
         },
 
         '& > input::placeholder': {
-          color: '$green100'
+          color: 'white'
         }
       },
       unfocus: {}
