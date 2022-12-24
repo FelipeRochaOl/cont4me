@@ -4,6 +4,7 @@ import * as Separator from '@radix-ui/react-separator'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { FaEdit, FaLightbulb } from 'react-icons/fa'
 
 import {
@@ -17,6 +18,8 @@ import {
 } from './styles'
 
 export const Header = () => {
+  const router = useRouter()
+
   return (
     <HeaderContainer>
       <HeaderPrincipal>
@@ -31,35 +34,63 @@ export const Header = () => {
             <NavigationMenu.List className="navigationMenuList">
               <NavigationMenu.Item className="navigationMenuItem">
                 <NavigationMenu.Link asChild>
-                  <Link href="/dashboard">Dashboard</Link>
+                  <Link
+                    href="/dashboard"
+                    className={router.asPath === '/dashboard' ? 'active' : ''}
+                  >
+                    Dashboard
+                  </Link>
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className={'navigationMenuItem'}>
                 <NavigationMenu.Link asChild>
-                  <Link href="/bills" className={'active'}>
+                  <Link
+                    href="/bills"
+                    className={router.asPath === '/bills' ? 'active' : ''}
+                  >
                     Contas
                   </Link>
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className="navigationMenuItem">
                 <NavigationMenu.Link asChild>
-                  <Link href="/bills">Pessoas</Link>
+                  <Link
+                    href="/peoples"
+                    className={router.asPath === '/peoples' ? 'active' : ''}
+                  >
+                    Pessoas
+                  </Link>
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className="navigationMenuItem">
                 <NavigationMenu.Link asChild>
-                  <Link href="/bills">Financeiro</Link>
+                  <Link
+                    href="/finances"
+                    className={router.asPath === '/finances' ? 'active' : ''}
+                  >
+                    Financeiro
+                  </Link>
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className="navigationMenuItem">
                 <NavigationMenu.Link asChild>
-                  <Link href="/bills">Calendário</Link>
+                  <Link
+                    href="/calendar"
+                    className={router.asPath === '/calendar' ? 'active' : ''}
+                  >
+                    Calendário
+                  </Link>
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className="navigationMenuItem">
                 <NavigationMenu.Link asChild>
                   <NavigationMenuLinkIcon>
-                    <Link href="/bills">Metas</Link>
+                    <Link
+                      href="/goals"
+                      className={router.asPath === '/goals' ? 'active' : ''}
+                    >
+                      Metas
+                    </Link>
                     <FaLightbulb size={16} />
                   </NavigationMenuLinkIcon>
                 </NavigationMenu.Link>
@@ -73,19 +104,21 @@ export const Header = () => {
             Bem Vindo
             <span>Felipe Rocha Oliveira</span>
           </UserContent>
-          <UserAvatar>
-            <Avatar.Root className="avatarContent">
-              <Avatar.Image
-                className="avatarImage"
-                src="https://avatars.githubusercontent.com/u/13703006?v=4&w=86&h=86&dpr=2&q=80"
-                alt="Colm Tuite"
-              />
-              <Avatar.Fallback className="avatarFallback" delayMs={600}>
-                FR
-              </Avatar.Fallback>
-            </Avatar.Root>
-            <FaEdit size={15} />
-          </UserAvatar>
+          <Link href="/profile">
+            <UserAvatar>
+              <Avatar.Root className="avatarContent">
+                <Avatar.Image
+                  className="avatarImage"
+                  src="https://avatars.githubusercontent.com/u/13703006?v=4&w=86&h=86&dpr=2&q=80"
+                  alt="Colm Tuite"
+                />
+                <Avatar.Fallback className="avatarFallback" delayMs={600}>
+                  FR
+                </Avatar.Fallback>
+              </Avatar.Root>
+              <FaEdit size={15} />
+            </UserAvatar>
+          </Link>
         </UserContainer>
       </HeaderPrincipal>
 

@@ -75,7 +75,7 @@ export const UserContent = styled('div', {
   }
 })
 
-export const UserAvatar = styled('a', {
+export const UserAvatar = styled('div', {
   display: 'flex',
   position: 'relative',
 
