@@ -47,7 +47,7 @@ export const UserContainer = styled('div', {
   position: 'relative',
   width: '100%',
 
-  '.return': {
+  button: {
     position: 'absolute',
     bottom: 0,
     left: 0

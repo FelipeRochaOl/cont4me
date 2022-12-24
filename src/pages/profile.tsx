@@ -1,11 +1,10 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
 import { FaEdit, FaEnvelope, FaPhoneAlt, FaUserAlt } from 'react-icons/fa'
-import { HiOutlineChevronLeft } from 'react-icons/hi'
 import { ImKey } from 'react-icons/im'
+import { ButtonBack } from '../components/ButtonBack'
 import { ButtonSubmit } from '../components/Form/ButtonSubmit'
 import { Input } from '../components/Form/Input'
 import {
@@ -45,9 +44,7 @@ const Profile = () => {
       <ProfileContainer>
         <h1>Profile</h1>
         <UserContainer>
-          <Link href="" className="return">
-            <HiOutlineChevronLeft size={26} />
-          </Link>
+          <ButtonBack />
           <UserAvatar>
             <Avatar.Root className="avatarContent">
               <Avatar.Image
