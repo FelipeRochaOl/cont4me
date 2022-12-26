@@ -1,27 +1,18 @@
-import Link from 'next/link'
-import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi'
 import { SelectItem } from '../Form/SelectItem'
 import { SelectRadix } from '../Form/SelectRadix'
+import { Title } from '../Page/Title'
 import {
   CalendarBillContainer,
-  CalendarBillContent,
-  CalendarBillHeader,
-  CalendarBillTable
+  CalendarBillContent, CalendarBillTable
 } from './styles'
 import { SummaryCell } from './SummaryCell'
 
 export const CalendarBill = () => {
   return (
     <CalendarBillContainer>
-      <CalendarBillHeader>
-        <Link href="">
-          <HiOutlineChevronLeft size={26} />
-        </Link>
+      <Title paginate={{ initialPage: 1, endPage: 10 }}>
         <h1>Carteira</h1>
-        <Link href="">
-          <HiOutlineChevronRight size={26} />
-        </Link>
-      </CalendarBillHeader>
+      </Title>
       <CalendarBillContent>
         <CalendarBillTable>
           <thead>

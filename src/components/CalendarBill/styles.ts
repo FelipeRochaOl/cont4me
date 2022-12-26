@@ -8,18 +8,6 @@ export const CalendarBillContainer = styled('section', {
   marginTop: '4.75rem'
 })
 
-export const CalendarBillHeader = styled('header', {
-  display: 'flex',
-  alignItems: 'baseline',
-  color: '$green200',
-
-  h1: {
-    flex: 1,
-    marginLeft: '54px',
-    fontWeight: 500
-  }
-})
-
 export const CalendarBillContent = styled('div', {
   width: '618.5px',
   margin: '0 auto',
