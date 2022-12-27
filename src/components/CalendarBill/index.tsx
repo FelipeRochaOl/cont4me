@@ -1,5 +1,5 @@
-import { SelectItem } from '../Form/SelectItem'
-import { SelectRadix } from '../Form/SelectRadix'
+import { SelectItem } from '../Page/Form/SelectItem'
+import { SelectRadix } from '../Page/Form/SelectRadix'
 import { Title } from '../Page/Title'
 import {
   CalendarBillContainer,

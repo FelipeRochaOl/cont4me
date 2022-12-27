@@ -55,8 +55,8 @@ export const Header = () => {
               <NavigationMenu.Item className="navigationMenuItem">
                 <NavigationMenu.Link asChild>
                   <Link
-                    href="/peoples"
-                    className={router.asPath === '/peoples' ? 'active' : ''}
+                    href="/people"
+                    className={router.asPath === '/people' ? 'active' : ''}
                   >
                     Pessoas
                   </Link>

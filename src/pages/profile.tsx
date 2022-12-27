@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
 import { FaEdit, FaEnvelope, FaPhoneAlt, FaUserAlt } from 'react-icons/fa'
 import { ImKey } from 'react-icons/im'
-import { ButtonSubmit } from '../components/Form/ButtonSubmit'
-import { Input } from '../components/Form/Input'
 import { ButtonBack } from '../components/Page/ButtonBack'
+import { ButtonSubmit } from '../components/Page/Form/ButtonSubmit'
+import { Input } from '../components/Page/Form/Input'
 import {
   Container,
   ProfileContainer,

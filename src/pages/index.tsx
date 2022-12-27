@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
 import { FaEnvelope } from 'react-icons/fa'
 import { ImKey } from 'react-icons/im'
-import { ButtonSubmit } from '../components/Form/ButtonSubmit'
+import { ButtonSubmit } from '../components/Page/Form/ButtonSubmit'
 
-import { Input } from '../components/Form/Input'
+import { Input } from '../components/Page/Form/Input'
 import { useTheme } from '../hooks/useTheme'
 import {
   Container,
