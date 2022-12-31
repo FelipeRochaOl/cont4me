@@ -9,7 +9,7 @@ export const HeaderListPage = styled('header', {
 export const Breadcrumbs = styled('div', {
   color: '$green200',
   fontSize: '$md',
-  padding: '5px 0',
+  padding: '5px',
   borderBottom: '1px solid $gray400',
 
   'a, svg': {
