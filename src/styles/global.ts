@@ -25,7 +25,8 @@ export const globalStyles = globalCss({
     fontFamily: 'Poppins, sans-serif',
     fontWeight: 600,
     fontSize: '$lg',
-    textAlign: 'center'
+    textAlign: 'center',
+    cursor: 'pointer'
   },
 
   'li, ul, ol, a': {
