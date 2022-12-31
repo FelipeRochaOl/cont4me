@@ -11,5 +11,5 @@ export const PageContent = styled('section', {
 })
 
 export const PageMain = styled('section', {
-  padding: '1.25rem'
+  padding: '1.25rem 0'
 })
